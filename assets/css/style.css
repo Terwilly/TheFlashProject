@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .container {
   width: 80%;
@@ -42,28 +43,33 @@ header ul li a:hover {
 }
 
 /* Design de la partie Hero*/
-#hero {
+#hero,
+#acteurs {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-#hero .titre img {
+#hero .titre img,
+#acteurs .titre img {
   width: 6%;
 }
 
-#hero .titre {
+#hero .titre,
+#acteurs .titre {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#hero .titre h1 {
+#hero .titre h1,
+#acteurs .titre h1 {
   font-size: 60px;
   padding-left: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #hero .slogan,
-#hero .description {
+#hero .description,
+#acteurs .description {
   text-align: center;
 }
 
@@ -72,7 +78,8 @@ header ul li a:hover {
   margin: 20px 0;
 }
 
-#hero .description {
+#hero .description,
+#acteurs .description {
   width: 70%;
   margin: 0 auto;
   font-size: 23px;
@@ -81,7 +88,8 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
 }
-#hero .acteurs {
+#hero .acteurs,
+#acteurs .acteurs {
   margin-top: 40px;
   font-size: 40px;
   color: red;
@@ -97,4 +105,20 @@ header ul li a:hover {
 
 #images img {
   width: 100%;
+}
+
+/* Design Section acteurs - CARD */
+
+#acteurs .card {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#acteurs .card img {
+  border-radius: 12px;
+}
+
+#acteurs .card img:hover {
+  transform: scale(1.1);
 }
